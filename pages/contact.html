@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page contact</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Énergies Renouvelables</h1>
+
+    <nav>
+        <a href="Accueil.html">Accueil</a>
+        <a href="histoire.html">Histoire</a>
+        <a href="source.html">Sources</a>
+        <a href="enjeux.html">Enjeux</a>
+        <a href="avantage.html">Avantages</a>
+        <a href="analyse_et_projection.html">Analyses</a>
+        <a href="entreprises.html">Entreprises</a>
+        <a href="newsroom.html">Newsroom</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Contacter le service clientèle</h1>
+
+    <p>
+        Cette page permet de contacter les responsables du service clientèle du site.
+    </p>
+
+    <section>
+        <h2>Coordonnées du premier responsable</h2>
+        <img src="../images/adel.jpg" alt="Photo de Mohamed Adel" title="Adel" width="250" height="270">
+
+        <ul>
+            <li><strong>Nom :</strong> Mohamed Adel Kallel</li>
+            <li><strong>Email :</strong> adelkallel200@gmail.com</li>
+            <li><strong>Téléphone :</strong> +216 29578400</li>
+            <li><strong>Fonction :</strong> Étudiant en première année préparatoire intégrée à l’ISIMS</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Coordonnées du deuxième responsable</h2>
+        <img src="../images/anis.png" alt="Photo de Anis Kammoun" title="Anis" width="250" height="250">
+
+        <ul>
+            <li><strong>Nom :</strong> Anis Kammoun</li>
+            <li><strong>Email :</strong> kammounanis2007@gmail.com</li>
+            <li><strong>Téléphone :</strong> +216 57155780</li>
+            <li><strong>Fonction :</strong> Étudiant en première année préparatoire intégrée à l’ISIMS</li>
+        </ul>
+    </section>
+
+    <form method="post" action="destination.html" onsubmit="return verffrom()">
+        <fieldset>
+            <legend><h2>Formulaire de contact</h2></legend>
+
+            <ol>
+                <li>
+                    <label for="nom">Nom et prénom :</label>
+                    <input type="text" id="nom" placeholder="Votre nom et prénom ici" name="nom" required>
+                </li>
+
+                <li>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" placeholder="example@domain.com" name="email" required>
+                </li>
+
+                <li>
+                    <label for="indicatif">Pays :</label>
+                    <select id="indicatif" name="indicatif">
+                        <option value="+216">Tunisie (+216)</option>
+                        <option value="+33">France (+33)</option>
+                        <option value="+213">Algérie (+213)</option>
+                        <option value="+212">Maroc (+212)</option>
+                        <option value="+1">Canada / USA (+1)</option>
+                    </select>
+                </li>
+
+                <li>
+                    <label for="phone_num">Téléphone :</label>
+                    <input type="tel" id="phone_num" name="phone_number"
+                    placeholder="Exemple : 29578400" pattern="[0-9]{8,12}" required>
+                </li>
+
+                <li>
+                    <label for="objet">Objet :</label>
+                    <input type="text" id="objet" placeholder="Écrire ici" name="objet" required>
+                </li>
+
+                <li>
+                    <label for="message">Message :</label>
+                    <textarea id="message" placeholder="Écrire ici" name="message" required></textarea>
+                </li>
+            </ol>
+
+            <button type="submit">Envoyer</button>
+            <button type="reset">Annuler</button>
+        </fieldset>
+    </form>
+
+</main>
+
+<footer>
+    <p>© 2026 – Projet HTML | Énergies renouvelables</p>
+</footer>
+
+</body>
+</html>
